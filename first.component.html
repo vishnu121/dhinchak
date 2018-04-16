@@ -1,0 +1,215 @@
+<div style="text-align:center">
+    <img src="assets\shru2.jpg" width="100" height="100" alt="Angular Logo" >
+</div>
+
+<div class="center">
+  <table>
+    <tr>
+      <td>
+        <h2 class="page-heading">Overview</h2>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="center">
+  <table>
+    <tr>
+      <td>
+        <li data-ng-repeat="social in data.userSocialHandles" class="ng-scope">
+            <div data-ng-if="social.isReady===false" class="ng-scope">
+                <a href="https://www.facebook.com" data-ng-click="editSocial('updateSocial',data.userSocialHandles)">
+                  <img data-ng-src="https://jbstatic.timesjobs.com/images/FB-d.png" alt="FB" src="https://jbstatic.timesjobs.com/images/FB-d.png">
+                </a>
+              </div>
+        </li>
+      </td>
+      <td>
+        <li data-ng-repeat="social in data.userSocialHandles" class="ng-scope">
+              <div data-ng-if="social.isReady===false" class="ng-scope">
+                  <a href="https://www.linkedin.com" data-ng-click="editSocial('updateSocial',data.userSocialHandles)">
+                    <img data-ng-src="https://jbstatic.timesjobs.com/images/LI-d.png" alt="LI" src="https://jbstatic.timesjobs.com/images/LI-d.png">
+                  </a>
+              </div>
+        </li>
+      </td>
+      <td>
+        <li data-ng-repeat="social in data.userSocialHandles" class="ng-scope">
+              <div data-ng-if="social.isReady===false" class="ng-scope">
+                  <a href="https://plus.google.com/discover" data-ng-click="editSocial('updateSocial',data.userSocialHandles)">
+                    <img data-ng-src="https://jbstatic.timesjobs.com/images/GMAIL-d.png" alt="GMAIL" src="https://jbstatic.timesjobs.com/images/GMAIL-d.png">
+                  </a>
+                </div>
+         </li>
+      </td>
+      <td>
+        <li data-ng-repeat="social in data.userSocialHandles" class="ng-scope">
+              <div data-ng-if="social.isReady===false" class="ng-scope">
+                  <a href="https://twitter.com" data-ng-click="editSocial('updateSocial',data.userSocialHandles)">
+                    <img data-ng-src="https://jbstatic.timesjobs.com/images/TWITTER-d.png" alt="TWITTER" src="https://jbstatic.timesjobs.com/images/TWITTER-d.png">
+                  </a>
+              </div>
+        </li>
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+
+<div class="center">
+  <table>
+    <tr>
+      <td>
+        <h2 class="page-heading">Experience</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Add Your Experience<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">&nbsp;Here</a></p>
+        <div id="light" class="white_content" >
+          <!--Update Work Experience <a href="first" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>-->
+          <h1 style="color: red; text-align: center">Update your experience now</h1><br>
+          <div class="close">
+           <a href="first"> <img src="assets\download.png" width="30" height="30" alt="close"></a>
+          </div>
+
+
+          <h2>Total Work Experience</h2>
+
+          FROM:  <input type="date" name="bday">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TO:  <input type="date" name="bday">
+
+          <h5 style="width: 400px; height: 30px;color: grey; text-align: center"> Enter your total years of work experience</h5><hr>
+          <h2> Add Current company details</h2>
+          <table>
+            <tr>
+              <td>
+                <select  style="width: 200px; height: 35px;color: black">
+                <option value="fulltime">Full Time</option>
+                <option value="parttime">Part Time</option>
+                <option value="unemployed">Unemployed</option>
+                </select>
+              </td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <td>
+                <input type="text" name="work" placeholder="workloction" style="width: 200px; height: 30px;color: #66a3ff">
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td style="width: 150px; height: 30px;color: black">
+                <input type="text" name="company" placeholder="companyname" style="width: 200px; height: 30px;color: black">
+              </td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+              <td>
+                 <input type="text" name="designation" placeholder="Designation" style="width: 200px; height: 30px;color: black">
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <h2>About your experience there</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea name="message" rows="10" cols="30" style="width:600px; height:150px"></textarea>
+              </td>
+            </tr>
+          </table>
+         <br>
+         <button type="button" value="Submit"  onclick="alert('Thank you for submitting your details!')">SAVE</button>
+         </div>
+         <div id="fade" class="black_overlay"></div>
+       </td>
+     </tr>
+   </table>
+ </div>
+<br>
+
+<div class="center">
+<table>
+    <tr>
+      <td>
+        <h2 class="page-heading">Education</h2>
+      </td>
+    </tr>
+    <p>Add Your Education here</p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">&nbsp;Here</a>
+    <div id="light" class="white_content" >
+    </div>
+   <!-- <tr>
+      <td>
+        <p>Add Your Education<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a></p>
+        <div id="light" class="white_content" >
+          hi
+          <h2 style="color: gray">Seems something new to education</h2>
+
+        </div>
+          
+          
+           <div class="close">
+              <a href="first"> <img src="assets\download.png" width="30" height="30" alt="close"></a>
+           </div>
+         
+       </td>
+     </tr>-->
+
+   </table>
+ </div>
+ <br>
+ 
+<div id="overlay" onclick="off()"></div>
+
+<div class="center" style="padding:20px">
+  <h2>Overlay</h2><br>
+  <p>Add an overlay effect to the page content (100% width and height with a black background color with 50% opacity).</p><br>
+  <button onclick="on()">Turn on overlay effect</button>
+</div>
+<br>
+
+<div class="center">
+  <table cellspacing="30">
+    <tr>
+      <td style="width: 150px; height: 100px;color: black">
+        Profile Summary
+      </td>
+      
+      <td>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      </td>
+      <td style="width: 150px; height: 30px; color: #66a3ff">
+        Add profile Summary
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+
+
+<div class="center">
+<table>
+    <tr>
+      <td>
+        <h2 class="page-heading">Interest</h2><br>
+      </td>
+    </tr>
+      <tr>
+      <td>
+         <img src="assets\Salary.jpg" width="180" height="100" alt="Salary">
+         <img src="assets\database.jpg" width="180" height="100" alt="database">
+         <img src="assets\interview.jpg" width="180" height="100" alt="interview">
+         <img src="assets\product.png" width="180" height="100" alt="Product">
+         <img src="assets\programming.jpg" width="180" height="100" alt="Programming">
+        <img src="assets\review.jpg" width="180" height="100" alt="Review">
+
+
+      </td>
+    </tr>
+</table>
+</div>
+
+
+
+
+
+
